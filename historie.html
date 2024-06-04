@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeroBuss Brew</title>
+    <meta name="author" content="Esra Shamasneh">
+    <meta name="keywords" content="ZeroBuss Brew, alkoholfri øl, alkoholfri, øl, sundhed, samvær, kvalitet, bryggeri, fest, begivenheder, historie, historien bag ZeroBuss Brew, ZBB">
+    <meta name="description" content="Læs historien bag ZeroBuss Brew - hvordan vi startede med en passion for øl og en vision om at skabe en alkoholfri drik uden at gå på kompromis med smagen. Følg vores rejse fra det første eksperiment i vores lille hjemmebryggeri til et elsket brand, der tilbyder alkoholfri øl til enhver lejlighed.">
+    <link rel="stylesheet" href="css/historie.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <style>
+        .material-icons {
+    font-size: 2.3rem; }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!--Her laver jeg navbaren som indholder alle mine submenuer. Her linker jeg også til de tre artikler jeg har lavet -->
+        <!--Jeg har sat forskellige klasser og id på menupunkterne så jeg kan style dem i css-->
+        <nav class="navbar">
+            <ul class="menu">
+                <li id="burgerbar" onclick=showSidebar()><a href="#"><i class="material-icons">menu</i></a></li>
+                <li><a href="index.html"><img class= "logo" src="img/logo.webp" alt="Normal logo"></a></li>
+                <li class="click">Produkter
+                    <ul class="submenu">
+                        <li><a href="#">Hvilke butikker er vi i?</a></li>
+                        <li><a href="produkter.html">Køb online</a></li>
+                        <li><a href="#">Sæsonens specialiteter</a></li>
+        
+                    </ul>
+                </li>
+                <li class="click">Vores bryggeri
+                    <ul class="submenu">
+                        <li><a href="historie.html">Historien bag ZeroBuss Brew</a></li>
+                        <li><a href="#">Sådan brygger vi din øl</a></li>
+                    </ul>
+                </li>
+                <li class="click">Øl til maden
+                    <ul class="submenu">
+                        <li><a href="#">Mad- og ølparinger</a></li>
+                        <li><a href="#">Opskrifter med alkoholfri øl</a></li>
+                       
+                    </ul>
+                </li>
+                <li class="click">Begivenheder
+                    <ul class="submenu">
+                        <li><a href="#">Vi er på din festival</a></li>
+                        <li><a href="#">Samarbejdsmuligheder</a></li>
+                        <li><a href="#">Samarbejdspartner begivenheder</a></li>
+                    </ul>
+                </li>
+                <li class="click">Kontakt
+                    <ul class="submenu">
+                        <li><a href="#">Bestil os til din næste fest</a></li>
+                        <li><a href="oss.html">Ofte stillede spørgsmål</a></li>
+                        <li><a href="#">Vores politik</a></li>
+                        <li><a href="#">Returnering</a></li>
+                    </ul>
+                </li>
+                
+                <li id="shopping"><a href="#"><i class="material-icons">shopping_basket</i></a></li>
+            </ul>
+        
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><i class="material-icons">close</i></a></li>
+                <li>Produkter
+                    <ul class="sideSubmenu">
+                        <li><a href="#">Hvilke butikker er vi i?</a></li>
+                        <li><a href="produkter.html">Køb online</a></li>
+                        <li><a href="#">Sæsonens specialiteter</a></li>
+                    </ul>
+                </li>
+                <li>Vores bryggeri
+                    <ul class="sideSubmenu">
+                        <li><a href="historie.html">Historien bag ZeroBuss Brew</a></li>
+                        <li><a href="#">Sådan brygger vi din øl</a></li>
+                    </ul>
+                </li>
+                <li>Øl til maden
+                    <ul class="sideSubmenu">
+                        <li><a href="#">Mad- og ølparinger</a></li>
+                        <li><a href="#">Opskrifter med alkoholfri øl</a></li>
+                    </ul>
+                </li>
+                <li>Begivenheder
+                    <ul class="sideSubmenu">
+                        <li><a href="#">Vi er på din festival</a></li>
+                        <li><a href="#">Samarbejdsmuligheder</a></li>
+                        <li><a href="#">Samarbejdspartner begivenheder</a></li>
+                    </ul>
+                </li>
+                <li>Kontakt
+                    <ul id="om" class="sideSubmenu">
+                        <li><a href="#">Bestil os til din næste fest</a></li>
+                        <li><a href="oss.html">Ofte stillede spørgsmål</a></li>
+                        <li><a href="#">Vores politik</a></li>
+                        <li><a href="#">Returnering</a></li>
+                    </ul>
+                </li>
+            
+            </ul>
+        </nav>
+        </header>
+
+        <!--Her har jeg skrevet alt indholdet til siden ind og opdelt det i øvre og nedre del af siden og i relevante lister og kasser så jeg nemt kan arbejde med dem i css-->
+        <article class="alt">
+            <div><h1>Historien bag ZeroBuss Brew</h1></div>
+
+            <article class="artikel1">
+            <img src="img/skoel.webp" alt="To øl">
+
+            <div class="alt_tekst1">
+            <div class="inspiration"><h3>Inspiration</h3></div>
+            <div class="tekst1"><p>ZeroBuzz Brew blev født ud af en passion for øl og en vision om at skabe en alkoholfri drik uden at gå på kompromis med smagen.</p>
+                <p>Vores rejse begyndte en sommeraften, da vores grundlægger, Karl-Emil Andersen, sad med venner og nød en øl. Mens samtalerne flød og latteren fyldte luften, opstod spørgsmålet: "Hvorfor findes der ikke en alkoholfri øl, der smager lige så godt som de bedste håndbryggede øl?"</p>
+            </div>
+
+        </div>
+
+        </article>
+
+            <article class="artikel2">
+                <img src="img/Brewery.webp" alt="Ølbryggeri">
+
+                <div class="alt_tekst2">
+                <div class="batch"><h3>Det første batch</h3></div>
+                <div class="tekst2"><p>Inspireret af denne tanke begyndte Andersen at eksperimentere i sit lille hjemmebryggeri. Med baggrund som kemiker og ølentusiast dedikerede han sig til at perfektionere en bryggeproces, der kunne fjerne alkoholen uden at miste den rige og komplekse smag, som kendetegner kvalitetsøl.</p>
+                <p>Efter mange forsøg og utallige smagsprøver blev det første batch af ZeroBuzz Brew brygget.</p>
+                </div>
+            </div>
+
+        </article>
+
+            <article class="artikel3">
+                <div class="pour"><img src="img/pour.webp" alt="Øl bliver hældt i glas i natur"></div>
+                
+                <div class="alt_tekst3">
+                <h3>Missionen</h3>
+                <div class="tekst3"><p>Navnet "ZeroBuzz Brew" symboliserer vores mission: at tilbyde en øloplevelse uden alkoholens bivirkninger, men med fuld smag og nydelse. Vores bryggeriteam, som nu består af nogle af de dygtigste ølentusiaster og innovatører, arbejder utrætteligt for at skabe nye og spændende smagsvarianter, der appellerer til enhver ølelsker.</p>
+                    <p>Vi er stolte af vores rejse fra en enkel idé til et elsket brand, der tilbyder alkoholfri øl til enhver lejlighed. Hos ZeroBuzz Brew handler det ikke kun om øl – det handler om at kunne nyde øjeblikkene, dele dem med venner og familie, og samtidig tage bevidste valg uden at gå på kompromis.</p></div>
+                </div>
+                </article>
+        </article>
+        
+        <article class="outro">
+            <p>Vi er stolte af vores rejse fra en enkel idé til et elsket brand, der tilbyder alkoholfri øl til enhver lejlighed. Hos ZeroBuzz Brew handler det ikke kun om øl – det handler om at kunne nyde øjeblikkene, dele dem med venner og familie, og samtidig tage bevidste valg uden at gå på kompromis</p>
+            <p>Velkommen til ZeroBuzz Brew – 0% Alkohol, 100% Sammenhold</p>
+        </article>
+
+
+        <!--Her har jeg sat min footer ind med det relevante information og sat det op i lister så jeg kan style det i css-->
+        <footer>
+            <div class="alt_footer">
+            <div>
+            <ul>
+                <li><h4>Kontakt</h4></li>
+                <li>Telefon: 42373035</li>
+                <li>Adresse: Ryesgade 2, 8000</li>
+            </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h4>Telefontider</h4></li>
+                    <li>Man. - Fre. 08-16</li>
+                    <li>Lørdag 12-16</li>
+                    <li>Søndag Lukket</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h4>Følg os</h4></li>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>TikTok</li>
+                    <li>LinkedIn</li>
+                </ul>
+            </div>
+        </div>
+        </footer>
+    
+
+        <script src="js/script.js"></script>
+    </body>

@@ -1,0 +1,464 @@
+/*Her fjerner jeg alt styling og sætter standardfonten til open sans*/
+*{
+    margin: 0;
+    background: none;
+    border: none;
+    font-family: 'open sans', sans-serif;
+}
+
+
+
+/*Her sætter jeg baggrunden ind og får den til at fylde hele siden*/
+body {
+    background-image: url('../img/baggrund.webp');
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+
+/*Her fastsætter jeg min header i toppen så den bliver der når man scroller*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Sørg for, at headeren er foran alt andet indhold */
+}
+
+/*Her sætter jeg baggrundsfarve på headeren når man scroller*/
+.scrolled {
+    background-color: #15411b;
+    transition: background-color 0.3s ease;
+    height: 6.5rem;
+}
+
+
+/*Her sætter jeg en størrelse på logoet*/
+.logo{
+    width: 7rem;
+    margin-top: 2rem;
+}
+
+/*Her styler jeg mine menupunkter og laver plads imellem dem.*/
+/*Derefter sætter jeg en højde på den og en baggrundsfarve samt tekstfarve*/
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5.6rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+#burgerbar{
+    display: none;
+}
+
+/*Her laver jeg lige plads til menulinksense*/
+.menu li{
+    margin: 1rem;
+    font-family: 'dm serif', sans-serif;
+    font-weight: 100;
+}
+
+/*Her styler jeg undermenupunkter*/
+.menu a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 0.3rem;
+    font-family: 'dm serif', sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
+/* Her sætter jeg en hover på så submenuen vises når man holder musen over*/
+.menu li:hover .submenu {
+    display: block; 
+}
+
+/*Her skjuler jeg submenuen, når men ikke hover på dem, giver baggrunden en farve og giver lidt plads omkring punkterne*/
+/*Og så sætter jeg det hele foran alt andet med z-index og sætter skygge på*/
+.submenu {
+    display: none;
+    list-style: none;
+    position: fixed;
+    background-color: #15411b;
+    border-radius: 1rem;
+    z-index: 1;
+    padding: 0.5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+/*Her styler jeg sidebaren med skygger og farve*/
+/*Derudover fastsætter jeg også dets position og størrelse*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 13rem;
+    z-index: 999;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: #15411b;
+    backdrop-filter: blur(10px);
+}
+
+/*Her fjerner jeg list styling fra sidebar menupunkterne*/
+.sidebar li{
+   padding: 1.3rem;
+   list-style: none;
+   background-color:#15411b;
+   color: #f9f9f9;
+   font-family: 'dm serif';
+    font-weight: 100;
+}
+
+/*Her styler jeg submenu punkterne*/
+.sidebar a{
+    text-decoration: none;
+    color: white;
+    font-family: 'dm serif';
+    font-weight: 100;
+}
+
+/*Her laver jeg en hover funktion så sidebaren dukker op*/
+.sidebar li:hover .sideSubmenu {
+    display: block; 
+    background-color: #15411b;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 8px; 
+}
+
+
+/*Her styler jeg submenu punkter med farve og plads*/
+.sideSubmenu {
+    display: none;
+    list-style: none;
+    background-color: #f9f9f9;
+    z-index: 1;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    position:absolute;
+    max-height: 30vh;
+    overflow-y:auto;
+}
+ 
+/*Her laver jeg plads mellem menupunkterne*/
+.sideSubmenu li{
+    padding: 0.7rem;
+}
+
+/*Her styler jeg øllen og frugterne*/
+.frugt_pils {
+    position: relative;
+    height: 83vh;
+    width: 98vw;
+    overflow: hidden;
+    margin-top: 15vh;
+}
+
+/*Her positionerer jeg frugter i midten på siden*/
+.frugter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    
+    width: auto;
+    transform: translate(-50%, -50%);
+}
+
+
+/*Her positionerer jeg øllen og teksten hvor jeg vil have dem */
+.pils_tekst {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f9f9f9;
+    width: 45vw;
+}
+
+/*Her styler jeg overskriften*/
+.tekst h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'dm serif';
+    font-weight: 100;
+} 
+
+/*Her styler jeg brødteksten*/
+.tekst p{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-family: 'open sans';
+}
+.pilsner {
+    max-width: 36%;
+}
+
+.tekst {
+    margin-left: 0.6rem;
+    margin-bottom: 3rem;
+}
+.pilned {
+    
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+}
+
+.pilned img {
+    height: 4rem;
+}
+
+/*Her styler jeg de tre grønne bokse med skygge og placering*/
+.green_box{
+background-color: #194e1f;
+box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7);
+margin-top: 15rem;
+padding: 1rem 1.2rem;
+width: 17vw;
+height: 70vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+color: #f9f9f9;
+margin-bottom: 2rem;
+border-radius: 5px; 
+}
+
+.green_box h3{
+    font-family: 'dm serif', sans-serif;
+    color: #f9f9f9;
+    font-weight: 100;
+    font-size: 1.6rem;
+}
+
+/*Her sætte rjeg størrelse på billederne*/
+.green_box img{
+    width: 16vw;
+    border-radius: 5px; 
+}
+
+/*Her sætter jeg font og mellem i teksten*/
+.green_box p{
+    font-family: 'open-sans';
+    line-height: 1.3;
+}
+
+.p1{
+font-size: 0.93rem;
+}
+
+.p3{
+    font-size: 0.89rem;
+}
+
+.ned_side{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.sund{
+    font-size: 1.8rem;
+}
+
+/*Her styler jeg footeren*/
+footer{
+    background-color: #15411b;
+    padding: 2rem 0;
+    height: 25vh;
+    color: #f9f9f9;
+    margin-top: 40vh;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Her styler jeg placering af elementer i footeren*/
+.alt_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 7rem;
+}
+
+footer div ul{
+    list-style: none;
+}
+
+/*Her styler jeg teksten i footeren*/
+h4{
+font-family: 'dm serif';
+font-weight: 100;
+font-size: 1.6rem;
+margin-bottom: 0.7rem;
+}
+
+/*Her styler jeg placeringen af elementer i footeren*/
+footer div ul li{
+    font-size: 1.3rem;
+    font-family: 'open-sans';
+    margin: 0.2rem;
+}
+
+.frugt_lille {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: auto;
+    transform: translate(-50%, -50%);
+}
+
+.pilned2{
+    display: none;
+}
+
+
+
+/*Her styler jeg skræem når den er max 1024px*/
+@media only screen and (max-width: 1024px) {
+    .click {
+      font-size: 1.2rem;
+    }
+
+    .pils_tekst{
+        width: 60vw;
+    }
+
+    .pils_tekst p{
+        font-size: 1.4rem;
+    }
+    
+    .pils_tekst h1{
+        font-size: 2rem;
+    }
+
+}
+
+/*Her styler jeg skræem når den er max 850px*/
+@media only screen and (max-width: 850px) {
+
+    .pilned2{
+        display: block;
+    }
+
+    #burgerbar{
+        display: block;
+    }
+
+    .click{
+        display: none;
+    }
+
+    .menu{
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .ned_side{
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .green_box{
+        height: fit-content;
+        width: min-content;
+    }
+
+    .green_box img{
+        width: 11rem;
+        margin: 1rem 0.5rem;
+
+    }
+
+    .smagen{
+        font-size: 1.4rem !important;
+    }
+
+    .pilned2 img {
+        height: 4rem;
+    }
+
+    .alt_footer{
+        flex-direction: column;
+        width: 100%;
+        margin: 2rem 0;
+        align-items: center;
+    }
+
+    .alt_footer ul{
+        margin-bottom: 3rem;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    footer div ul li{
+        width: 10rem;
+    }
+
+    .pils_tekst p{
+        font-size: 1.25rem;
+    }
+    
+    .pils_tekst h1{
+        font-size: x-large;
+    }
+
+    .pilsner{
+        width: 10rem;
+        }
+
+    .frugt_lille {
+        display: block;
+    }
+
+    .frugter{
+        display: none;
+    }
+        
+}
+
+/*Her styler jeg skræem når den er max 800px*/
+@media only screen and (max-width: 800px) {
+.pils_tekst p{
+    font-size: medium;
+    margin-right: 2rem;
+}
+
+.pils_tekst h1{
+    font-size: x-large;
+    margin-right: 2rem;
+}
+
+.pils_tekst{
+    width: inherit;
+}
+
+.pilsner {
+    margin-left: 2rem;
+}
+}
+
+/*Her laver jeg mine egne font, som er en jeg har hentet ned fra google og kaldt for "comic sans"*/
+/*Jeg har placeret den downloadede font i mappen "fonts", som jeg også har linket til her*/
+@font-face {
+    font-family: 'dm serif';
+    src: url(../fonts/DMSerifDisplay-Regular.ttf) format('truetype');
+}

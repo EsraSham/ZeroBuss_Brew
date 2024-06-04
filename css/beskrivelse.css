@@ -1,0 +1,420 @@
+/*Her fjerner jeg alt styling og sætter standardfonten til open sans*/
+*{
+    margin: 0;
+    background: none;
+    border: none;
+    color: #f9f9f9;
+}
+
+/*Her positionere jeg alt på siden udover header og footer*/
+.alt {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #f9f9f9;
+    justify-content: center;
+    align-items: center; 
+}
+
+/*Her sætter jeg baggrunden ind og får den til at fylde hele siden*/
+body {
+    background-image: url('../img/baggrund.webp');
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+
+/*Her fastsætter jeg min header i toppen så den bliver der når man scroller*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/*Her sætter jeg baggrundsfarve på headeren når man scroller*/
+.scrolled {
+    background-color: #15411b;
+    transition: background-color 0.3s ease; 
+    height: 6.5rem;
+}
+
+/*Her fjerner jeg brugerbaren*/
+#burgerbar{
+    display: none;
+}
+
+
+/*Her sætter jeg en størrelse på logoet*/
+.logo{
+    width: 7rem;
+    margin-top: 2rem;
+}
+
+/*Her styler jeg mine menupunkter og laver plads imellem dem.*/
+/*Derefter sætter jeg en højde på den og en baggrundsfarve samt tekstfarve*/
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5.6rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+/*Her laver jeg lige plads til menulinksense*/
+.menu li{
+    margin: 1rem;
+    font-family: 'dm serif', sans-serif;
+    font-weight: 100;
+}
+
+/*Her styler jeg undermenupunkter*/
+.menu a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 0.3rem;
+    font-family: 'dm serif', sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
+/* Her sætter jeg en hover på så submenuen vises når man holder musen over*/
+.menu li:hover .submenu {
+    display: block; 
+}
+
+/*Her skjuler jeg submenuen, når men ikke hover på dem, giver baggrunden en farve og giver lidt plads omkring punkterne*/
+/*Og så sætter jeg det hele foran alt andet med z-index og sætter skygge på*/
+.submenu {
+    display: none;
+    list-style: none;
+    position: fixed;
+    background-color: #15411b;
+    border-radius: 1rem;
+    z-index: 1;
+    padding: 0.5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+/*Her styler jeg sidebaren med skygger og farve*/
+/*Derudover fastsætter jeg også dets position og størrelse*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 13rem;
+    z-index: 999;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: #15411b;
+    backdrop-filter: blur(10px);
+}
+
+/*Her fjerner jeg list styling fra sidebar menupunkterne*/
+.sidebar li{
+   padding: 1.3rem;
+   list-style: none;
+   background-color:#15411b;
+   color: #f9f9f9;
+   font-family: 'dm serif';
+    font-weight: 100;
+}
+
+/*Her styler jeg submenu punkterne*/
+.sidebar a{
+    text-decoration: none;
+    color: white;
+    font-family: 'dm serif';
+    font-weight: 100;
+}
+
+/*Her laver jeg en hover funktion så sidebaren dukker op*/
+.sidebar li:hover .sideSubmenu {
+    display: block; 
+    background-color: #15411b;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 8px; 
+}
+
+
+/*Her styler jeg submenu punkter med farve og plads*/
+.sideSubmenu {
+    display: none;
+    list-style: none;
+    background-color: #f9f9f9;
+    z-index: 1;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    position:absolute;
+    max-height: 30vh;
+    overflow-y:auto;
+}
+ 
+/*Her laver jeg plads mellem menupunkterne*/
+.sideSubmenu li{
+    padding: 0.7rem;
+}
+
+/*Her styler jeg footeren*/
+footer{
+    background-color: #15411b;
+    padding: 2rem 0;
+    height: 25vh;
+    color: #f9f9f9;
+    margin-top: 40vh;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Her styler jeg placering af elementer i footeren*/
+.alt_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 7rem;
+}
+
+footer div ul{
+    list-style: none;
+}
+
+/*Her styler jeg teksten i footeren*/
+h4{
+font-family: 'dm serif';
+font-weight: 100;
+font-size: 1.6rem;
+margin-bottom: 0.7rem;
+}
+
+/*Her styler jeg placeringen af elementer i footeren*/
+footer div ul li{
+    font-size: 1.3rem;
+    font-family: 'open-sans';
+    margin: 0.2rem;
+}
+
+/*Her styler jeg den grønne box og centrerer den*/
+.green_box{
+    background-color: #194e1f;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    width: 70vw !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    padding: 0.5rem 1rem 1.5rem 2rem;
+}
+
+/*Her sætter jeg størrelse på ølbilledet*/
+.green_box img{
+    height: 55vh;
+}
+
+/*Her styler jeg læg i kurv knappen*/
+.kurv {
+    border: 2px solid white; 
+    border-radius: 10px; 
+    padding: 10px; 
+    display: inline-block; 
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+/*Her styler jeg alt i boksen*/
+.indhold{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    
+}
+
+/*Her styler jeg beskrivelsen*/
+.beskrivelse{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Her positionerer jeg billedet og teksten*/
+.billedetekst{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.lidt_om{
+   margin-left: 3rem;
+}
+
+/*Her styler jeg listen*/
+.green_box ul{
+    width: max-content;
+    padding: 1rem;
+    font-size: 1.5rem !important;
+}
+
+/*Her styler jeg teksten*/
+.green_box p{
+    margin-top: 1rem;
+    font-family: 'open sans';
+    font-size: 1.4rem;
+}
+
+h1, h2{
+    font-family: 'dm serif';
+    font-weight: 100;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/*Her styler jeg skræem når den er max 1100px*/
+@media only screen and (max-width: 1100px) {
+    .click {
+      font-size: 1.2rem;
+    }
+
+    .indhold{
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 0 0 0;
+    }
+
+    .lidt_om{
+        margin: 2rem 0 0 0;
+        padding: 1rem;
+    }
+
+    .green_box{
+        width: auto;
+        padding: 1rem 0 1rem 0;
+    }
+
+    .beskrivelse{
+        font-size: 1.7rem;
+    }
+
+    .kurv{
+        font-size: 2rem;
+    }
+
+    .green_box img{
+        height: 40vh;
+    }
+
+}
+
+/*Her styler jeg skræem når den er max 850px*/
+@media only screen and (max-width: 850px) {
+    .click{
+        display: none;
+    }
+
+    .menu{
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .alt_footer{
+        flex-direction: column;
+        width: 100%;
+        margin: 2rem 0;
+        align-items: center;
+    }
+
+    .alt_footer ul{
+        margin-bottom: 3rem;
+    }
+
+    .beskrivelse ul{
+        margin-left: 1.5rem !important;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    footer div ul li{
+        width: 10rem;
+    }
+
+    #burgerbar{
+        display: block;
+    }
+
+    .green_box{
+        width: 86vw !important;
+    }
+
+    .green_box img{
+        height: 30vh !important;
+    }
+
+    .beskrivelse{
+        width: max-content;
+        padding: 0.2rem !important;
+    }
+
+    .green_box img{
+        height: 35vh;
+    }
+
+    h2{
+        font-size: 1.4rem;
+    }
+
+    .indhold p{
+        font-size: 1rem;
+    }
+
+    .kurv{
+        font-size: 1.5rem;
+    }
+
+    .lidt_om{
+        margin-top: 1rem;
+    }
+    
+}
+
+/*Her styler jeg skræem når den er max 500px*/
+@media only screen and (max-width: 500px) {
+    .green_box img{
+        height: 20vh !important;
+    }
+}
+
+/*Her laver jeg mine egne font, som er en jeg har hentet ned fra google og kaldt for "comic sans"*/
+/*Jeg har placeret den downloadede font i mappen "fonts", som jeg også har linket til her*/
+@font-face {
+    font-family: 'dm serif';
+    src: url(../fonts/DMSerifDisplay-Regular.ttf) format('truetype');
+}

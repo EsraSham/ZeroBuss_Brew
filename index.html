@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeroBuss Brew</title>
+    <meta name="author" content="Esra Shamasneh">
+    <meta name="keywords" content="ZeroBuss Brew, alkoholfri øl, alkoholfri, øl, sundhed, samvær, kvalitet, bryggeri, fest, begivenheder">
+    <meta name="description" content="ZeroBuss Brew tilbyder en bred vifte af alkoholfri øl, der giver den autentiske ølsmag uden alkoholens negative virkninger. Vores øl er det perfekte valg for sundhedsbevidste individer, der ønsker at nyde samvær og kvalitet uden alkohol. Besøg os for at lære mere om vores historie, vores bryggeri og vores engagement i at skabe fantastiske øloplevelser.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <style>
+        .material-icons {
+    font-size: 2.3rem; }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!--Her laver jeg navbaren som indholder alle mine submenuer. Her linker jeg også til de tre artikler jeg har lavet -->
+        <!--Jeg har sat forskellige klasser og id på menupunkterne så jeg kan style dem i css-->
+        <nav class="navbar">
+            <ul class="menu">
+                <li id="burgerbar" onclick=showSidebar()><a href="#"><i class="material-icons">menu</i></a></li>
+                <li><a href="index.html"><img class= "logo" src="img/logo.webp" alt="Normal logo"></a></li>
+                
+                <li class="click">Produkter
+                    <ul class="submenu">
+                        <li><a href="#">Hvilke butikker er vi i?</a></li>
+                        <li><a href="produkter.html">Køb online</a></li>
+                        <li><a href="#">Sæsonens specialiteter</a></li>
+        
+                    </ul>
+                </li>
+                <li class="click">Vores bryggeri
+                    <ul class="submenu">
+                        <li><a href="historie.html">Historien bag ZeroBuss Brew</a></li>
+                        <li><a href="#">Sådan brygger vi din øl</a></li>
+                    </ul>
+                </li>
+                <li class="click">Øl til maden
+                    <ul class="submenu">
+                        <li><a href="#">Mad- og ølparinger</a></li>
+                        <li><a href="#">Opskrifter med alkoholfri øl</a></li>
+                       
+                    </ul>
+                </li>
+                <li class="click">Begivenheder
+                    <ul class="submenu">
+                        <li><a href="#">Vi er på din festival</a></li>
+                        <li><a href="#">Samarbejdsmuligheder</a></li>
+                        <li><a href="#">Samarbejdspartner begivenheder</a></li>
+                    </ul>
+                </li>
+                <li class="click">Kontakt
+                    <ul class="submenu">
+                        <li><a href="#">Bestil os til din næste fest</a></li>
+                        <li><a href="oss.html">Ofte stillede spørgsmål</a></li>
+                        <li><a href="#">Vores politik</a></li>
+                        <li><a href="#">Returnering</a></li>
+                    </ul>
+                </li>
+                
+                <li id="shopping"><a href="#"><i class="material-icons">shopping_basket</i></a></li>
+            </ul>
+        
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><i class="material-icons">close</i></a></li>
+                <li>Produkter
+                    <ul class="sideSubmenu">
+                        <li><a href="#">Hvilke butikker er vi i?</a></li>
+                        <li><a href="produkter.html">Køb online</a></li>
+                        <li><a href="#">Sæsonens specialiteter</a></li>
+                    </ul>
+                </li>
+                <li>Vores bryggeri
+                    <ul class="sideSubmenu">
+                        <li><a href="historie.html">Historien bag ZeroBuss Brew</a></li>
+                        <li><a href="#">Sådan brygger vi din øl</a></li>
+                    </ul>
+                </li>
+                <li>Øl til maden
+                    <ul class="sideSubmenu">
+                        <li><a href="#">Mad- og ølparinger</a></li>
+                        <li><a href="#">Opskrifter med alkoholfri øl</a></li>
+                    </ul>
+                </li>
+                <li>Begivenheder
+                    <ul class="sideSubmenu">
+                        <li><a href="#">Vi er på din festival</a></li>
+                        <li><a href="#">Samarbejdsmuligheder</a></li>
+                        <li><a href="#">Samarbejdspartner begivenheder</a></li>
+                    </ul>
+                </li>
+                <li>Kontakt
+                    <ul id="om" class="sideSubmenu">
+                        <li><a href="#">Bestil os til din næste fest</a></li>
+                        <li><a href="oss.html">Ofte stillede spørgsmål</a></li>
+                        <li><a href="#">Vores politik</a></li>
+                        <li><a href="#">Returnering</a></li>
+                    </ul>
+                </li>
+            
+            </ul>
+        </nav>
+        </header>
+
+         <!--Her har jeg skrevet alt indholdet til siden ind og opdelt det i øvre og nedre del af siden og i relevante kasser så jeg nemt kan arbejde med dem i css-->
+        <div class="frugt_pils">
+            <div><img class="frugter" src="img/frugt.webp" alt="Frugter"></div>
+            <div><img class="frugt_lille" src="img/frugt_lille.webp" alt="Frugter"></div>
+
+        <div class="pils_tekst">
+           <img class="pilsner" src="img/dryp_pilsner.webp" alt="Pilsner">
+
+            <article class="tekst">
+                <h1 class="hov">Hov! Du der! 
+                    Har du nogensinde...</h1>
+                <p>Smagt en øl helt fri for alkohol, men fuld af smag? Eller vågnet dagen efter en bytur uden tømmermænd?</p>
+                <p>Hvis ikke, er du kommet til det helt rigtige sted! Her tilbyder vi nemlig alt det man kunne ønske sig i en god øl helt uden alkohol! Læs mere herunder!</p>
+        </article>
+        </div>
+        <div class="pilned"><img src="img/pilned.webp" alt="Pil ned"></div>
+        </div>
+
+        <div class="ned_side">
+            <div class="green_box">
+                <h3 class="sund">Et sundere valg</h3>
+                <img src="img/skov.webp" alt="Natur">
+                <p class="p1">Alkoholfri øl er ikke kun en trend, men et smart valg for din sundhed. Med ZeroBuss Brew kan du nyde din yndlingssmag uden de negative effekter. Sig farvel til tømmermænd, forbedr din søvn, og boost din energi – alt imens du nyder en forfriskende øl. Skål for dit helbred!</p>
+            </div>
+
+            <div class="pilned2"><img src="img/pilned.webp" alt="Pil ned"></div>
+            
+            <div class="green_box">
+                <h3>Skål for samvær!</h3>
+                <img src="img/skoel.webp" alt="Skål">
+            <p class="p2">Hos ZeroBuss Brew tror vi på, at de bedste stunder skabes gennem fællesskab og gode oplevelser – helt uden alkohol. Vores alkoholfri øl er skabt til at bringe folk sammen, så du kan nyde smagen og samværet uden bekymringer.</p>
+            </div>
+
+            <div class="pilned2"><img src="img/pilned.webp" alt="Pil ned"></div>
+            
+            <div class="green_box">
+                <h3 class="smagen">Smagen af kvalitet</h3>
+                <img src="img/pour.webp" alt="Hælder øl">
+            <p class="p3">Bare fordi vores øl er alkoholfri, betyder det ikke, at vi går på kompromis med smagen. Hver eneste dråbe af vores øl er brygget med omhu og kærlighed for at sikre, at du får en smagsoplevelse, der er rig og tilfredsstillende. Prøv vores forskellige varianter og find din favorit!</p>
+            </div>
+        </div>
+        
+         <!--Her har jeg sat min footer ind med det relevante information og sat det op i lister så jeg kan style det i css-->
+        <footer>
+            <div class="alt_footer">
+            <div>
+            <ul>
+                <li><h4>Kontakt</h4></li>
+                <li>Telefon: 42373035</li>
+                <li>Adresse: Ryesgade 2, 8000</li>
+            </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h4>Telefontider</h4></li>
+                    <li>Man. - Fre. 08-16</li>
+                    <li>Lørdag 12-16</li>
+                    <li>Søndag Lukket</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h4>Følg os</h4></li>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>TikTok</li>
+                    <li>LinkedIn</li>
+                </ul>
+            </div>
+        </div>
+        </footer>
+    
+
+        <script src="js/script.js"></script>
+    </body>

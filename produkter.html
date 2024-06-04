@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeroBuss Brew</title>
+    <meta name="author" content="Esra Shamasneh">
+    <meta name="keywords" content="ZeroBuss Brew, alkoholfri øl, alkoholfri, øl, sundhed, samvær, kvalitet, bryggeri, fest, begivenheder, produkter">
+    <meta name="description" content="Køb online dine foretrukne alkoholfri øl fra ZeroBuss Brew. Vælg mellem vores variant af Pilsner, IPA, Lager, Peach, Apple, Orange, Grape, Strawberry og Citrus. Alle vores øl har en alkoholprocent på 0,0% og er produceret i Danmark.">
+    <link rel="stylesheet" href="css/produkter.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <style>
+        .material-icons {
+    font-size: 2.3rem; }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!--Her laver jeg navbaren som indholder alle mine submenuer. Her linker jeg også til de tre artikler jeg har lavet -->
+        <!--Jeg har sat forskellige klasser og id på menupunkterne så jeg kan style dem i css-->
+        <nav class="navbar">
+            <ul class="menu">
+                <li id="burgerbar" onclick=showSidebar()><a href="#"><i class="material-icons">menu</i></a></li>
+                <li><a href="index.html"><img class= "logo" src="img/logo.webp" alt="Normal logo"></a></li>
+                <li class="click">Produkter
+                    <ul class="submenu">
+                        <li><a href="#">Hvilke butikker er vi i?</a></li>
+                        <li><a href="produkter.html">Køb online</a></li>
+                        <li><a href="#">Sæsonens specialiteter</a></li>
+        
+                    </ul>
+                </li>
+                <li class="click">Vores bryggeri
+                    <ul class="submenu">
+                        <li><a href="historie.html">Historien bag ZeroBuss Brew</a></li>
+                        <li><a href="#">Sådan brygger vi din øl</a></li>
+                    </ul>
+                </li>
+                <li class="click">Øl til maden
+                    <ul class="submenu">
+                        <li><a href="#">Mad- og ølparinger</a></li>
+                        <li><a href="#">Opskrifter med alkoholfri øl</a></li>
+                       
+                    </ul>
+                </li>
+                <li class="click">Begivenheder
+                    <ul class="submenu">
+                        <li><a href="#">Vi er på din festival</a></li>
+                        <li><a href="#">Samarbejdsmuligheder</a></li>
+                        <li><a href="#">Samarbejdspartner begivenheder</a></li>
+                    </ul>
+                </li>
+                <li class="click">Kontakt
+                    <ul class="submenu">
+                        <li><a href="#">Bestil os til din næste fest</a></li>
+                        <li><a href="oss.html">Ofte stillede spørgsmål</a></li>
+                        <li><a href="#">Vores politik</a></li>
+                        <li><a href="#">Returnering</a></li>
+                    </ul>
+                </li>
+                
+                <li id="shopping"><a href="#"><i class="material-icons">shopping_basket</i></a></li>
+            </ul>
+        
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><i class="material-icons">close</i></a></li>
+                <li>Produkter
+                    <ul class="sideSubmenu">
+                        <li><a href="#">Hvilke butikker er vi i?</a></li>
+                        <li><a href="produkter.html">Køb online</a></li>
+                        <li><a href="#">Sæsonens specialiteter</a></li>
+                    </ul>
+                </li>
+                <li>Vores bryggeri
+                    <ul class="sideSubmenu">
+                        <li><a href="historie.html">Historien bag ZeroBuss Brew</a></li>
+                        <li><a href="#">Sådan brygger vi din øl</a></li>
+                    </ul>
+                </li>
+                <li>Øl til maden
+                    <ul class="sideSubmenu">
+                        <li><a href="#">Mad- og ølparinger</a></li>
+                        <li><a href="#">Opskrifter med alkoholfri øl</a></li>
+                    </ul>
+                </li>
+                <li>Begivenheder
+                    <ul class="sideSubmenu">
+                        <li><a href="#">Vi er på din festival</a></li>
+                        <li><a href="#">Samarbejdsmuligheder</a></li>
+                        <li><a href="#">Samarbejdspartner begivenheder</a></li>
+                    </ul>
+                </li>
+                <li>Kontakt
+                    <ul id="om" class="sideSubmenu">
+                        <li><a href="#">Bestil os til din næste fest</a></li>
+                        <li><a href="oss.html">Ofte stillede spørgsmål</a></li>
+                        <li><a href="#">Vores politik</a></li>
+                        <li><a href="#">Returnering</a></li>
+                    </ul>
+                </li>
+            
+            </ul>
+        </nav>
+        </header>
+
+        
+        <!--Her har jeg sat min footer ind med det relevante information og sat det op i lister så jeg kan style det i css-->
+        <div class="overskrift">
+            <h1>Køb online</h1>
+            </div>
+
+        <div class="produkter">
+            
+            
+            <div class="green_box">
+                <a href="#">
+                <img src="img/pilsner.webp" alt="Pilsner">
+                <ul class="beskrivelse">
+                    <li>Variant: Pilsner</li>
+                    <li>Alkoholprocent: 0,0%</li>
+                    <li>Produceret i: Danmark</li>
+                </ul>
+            </a>
+        </div>
+            
+            
+            <div class="green_box">
+                <a href="#">
+                <img src="img/ipa.webp" alt="IPA">
+                <ul class="beskrivelse">
+                    <li>Variant: IPA</li>
+                    <li>Alkoholprocent: 0,0%</li>
+                    <li>Produceret i: Danmark</li>
+                </ul>
+            </a>
+        </div>
+        
+            
+            
+            <div class="green_box">
+                <a href="#">
+                <img src="img/lager.webp" alt="Lager">
+                <ul class="beskrivelse">
+                    <li>Variant: Lager</li>
+                    <li>Alkoholprocent: 0,0%</li>
+                    <li>Produceret i: Danmark</li>
+                </ul>
+            </a>
+        </div>
+        
+
+            
+            <div class="green_box">
+                <a href="#">
+                <img src="img/peach.webp" alt="Peach">
+                <ul class="beskrivelse">
+                    <li>Variant: Peach</li>
+                    <li>Alkoholprocent: 0,0%</li>
+                    <li>Produceret i: Danmark</li>
+                </ul>
+            </a>
+        </div>
+        
+
+            
+            <div class="green_box">
+                <a href="#">
+                <img src="img/apple.webp" alt="Apple">
+                <ul class="beskrivelse">
+                    <li>Variant: Apple</li>
+                    <li>Alkoholprocent: 0,0%</li>
+                    <li>Produceret i: Danmark</li>
+                </ul>
+            </a>
+        </div>
+        
+
+        
+            <div class="green_box">
+                <a href="beskrivelse.html">
+                <img src="img/orange.webp" alt="Orange">
+                <ul class="beskrivelse">
+                    <li>Variant: Orange</li>
+                    <li>Alkoholprocent: 0,0%</li>
+                    <li>Produceret i: Danmark</li>
+                </ul>
+            </a>
+            </div>
+        
+
+        
+            <div class="green_box">
+                <a href="#">
+                <img src="img/grape.webp" alt="Grape">
+                <ul class="beskrivelse">
+                    <li>Variant: Grape</li>
+                    <li>Alkoholprocent: 0,0%</li>
+                    <li>Produceret i: Danmark</li>
+                </ul>
+            </a>
+        </div>
+        
+
+            
+            <div class="green_box">
+                <a href="#">
+                <img src="img/strawberry.webp" alt="Strawberry">
+                <ul class="beskrivelse">
+                    <li>Variant: Strawberry</li>
+                    <li>Alkoholprocent: 0,0%</li>
+                    <li>Produceret i: Danmark</li>
+                </ul>
+            </a>
+        </div>
+        
+
+            
+            <div class="green_box">
+                <a href="#">
+                <img src="img/citrus.webp" alt="Citrus">
+                <ul class="beskrivelse">
+                    <li>Variant: Citrus</li>
+                    <li>Alkoholprocent: 0,0%</li>
+                    <li>Produceret i: Danmark</li>
+                </ul>
+            </a>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="alt_footer">
+            <div>
+            <ul>
+                <li><h4>Kontakt</h4></li>
+                <li>Telefon: 42373035</li>
+                <li>Adresse: Ryesgade 2, 8000</li>
+            </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h4>Telefontider</h4></li>
+                    <li>Man. - Fre. 08-16</li>
+                    <li>Lørdag 12-16</li>
+                    <li>Søndag Lukket</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h4>Følg os</h4></li>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>TikTok</li>
+                    <li>LinkedIn</li>
+                </ul>
+            </div>
+        </div>
+        </footer>
+    
+
+        <script src="js/script.js"></script>
+    </body>

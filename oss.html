@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeroBuss Brew</title>
+    <meta name="author" content="Esra Shamasneh">
+    <meta name="keywords" content="ZeroBuss Brew, alkoholfri øl, alkoholfri, øl, sundhed, samvær, kvalitet, bryggeri, fest, spørgsmål, ofte stillede spørgsmål, ZBB">
+    <meta name="description" content="Få svar på ofte stillede spørgsmål om ZeroBuss Brew alkoholfri øl. Læs om alkoholindhold, veganervenlighed, hvor du kan købe vores øl, bestilling til private arrangementer, tilgængelige varianter, påvirkning af kørsel og drikke under graviditet samt hvordan vi sikrer smagen.">
+    <link rel="stylesheet" href="css/oss.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <style>
+        .material-icons {
+    font-size: 2.3rem; }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!--Her laver jeg navbaren som indholder alle mine submenuer. Her linker jeg også til de tre artikler jeg har lavet -->
+        <!--Jeg har sat forskellige klasser og id på menupunkterne så jeg kan style dem i css-->
+        <nav class="navbar">
+            <ul class="menu">
+                <li id="burgerbar" onclick=showSidebar()><a href="#"><i class="material-icons">menu</i></a></li>
+                <li><a href="index.html"><img class= "logo" src="img/logo.webp" alt="Normal logo"></a></li>
+                
+                <li class="click">Produkter
+                    <ul class="submenu">
+                        <li><a href="#">Hvilke butikker er vi i?</a></li>
+                        <li><a href="produkter.html">Køb online</a></li>
+                        <li><a href="#">Sæsonens specialiteter</a></li>
+        
+                    </ul>
+                </li>
+                <li class="click">Vores bryggeri
+                    <ul class="submenu">
+                        <li><a href="historie.html">Historien bag ZeroBuss Brew</a></li>
+                        <li><a href="#">Sådan brygger vi din øl</a></li>
+                    </ul>
+                </li>
+                <li class="click">Øl til maden
+                    <ul class="submenu">
+                        <li><a href="#">Mad- og ølparinger</a></li>
+                        <li><a href="#">Opskrifter med alkoholfri øl</a></li>
+                       
+                    </ul>
+                </li>
+                <li class="click">Begivenheder
+                    <ul class="submenu">
+                        <li><a href="#">Vi er på din festival</a></li>
+                        <li><a href="#">Samarbejdsmuligheder</a></li>
+                        <li><a href="#">Samarbejdspartner begivenheder</a></li>
+                    </ul>
+                </li>
+                <li class="click">Kontakt
+                    <ul class="submenu">
+                        <li><a href="#">Bestil os til din næste fest</a></li>
+                        <li><a href="oss.html">Ofte stillede spørgsmål</a></li>
+                        <li><a href="#">Vores politik</a></li>
+                        <li><a href="#">Returnering</a></li>
+                    </ul>
+                </li>
+                
+                <li id="shopping"><a href="#"><i class="material-icons">shopping_basket</i></a></li>
+            </ul>
+        
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><i class="material-icons">close</i></a></li>
+                <li>Produkter
+                    <ul class="sideSubmenu">
+                        <li><a href="#">Hvilke butikker er vi i?</a></li>
+                        <li><a href="produkter.html">Køb online</a></li>
+                        <li><a href="#">Sæsonens specialiteter</a></li>
+                    </ul>
+                </li>
+                <li>Vores bryggeri
+                    <ul class="sideSubmenu">
+                        <li><a href="historie.html">Historien bag ZeroBuss Brew</a></li>
+                        <li><a href="#">Sådan brygger vi din øl</a></li>
+                    </ul>
+                </li>
+                <li>Øl til maden
+                    <ul class="sideSubmenu">
+                        <li><a href="#">Mad- og ølparinger</a></li>
+                        <li><a href="#">Opskrifter med alkoholfri øl</a></li>
+                    </ul>
+                </li>
+                <li>Begivenheder
+                    <ul class="sideSubmenu">
+                        <li><a href="#">Vi er på din festival</a></li>
+                        <li><a href="#">Samarbejdsmuligheder</a></li>
+                        <li><a href="#">Samarbejdspartner begivenheder</a></li>
+                    </ul>
+                </li>
+                <li>Kontakt
+                    <ul id="om" class="sideSubmenu">
+                        <li><a href="#">Bestil os til din næste fest</a></li>
+                        <li><a href="oss.html">Ofte stillede spørgsmål</a></li>
+                        <li><a href="#">Vores politik</a></li>
+                        <li><a href="#">Returnering</a></li>
+                    </ul>
+                </li>
+            
+            </ul>
+        </nav>
+        </header>
+
+        <!--Her har jeg skrevet alt indholdet til siden ind og opdelt det i øvre og nedre del af siden og i relevante kasser så jeg nemt kan arbejde med dem i css-->
+        <div class="alt">
+            <div class="overskrift"><h1>Ofte stillede spørgsmål</h1></div>
+
+            <div class="boxes">
+                <div class="green_box">
+                    <div class="q">
+                        <p>Er ZeroBuss Brew øl virkelig helt alkoholfri?</p>
+                        <input type="checkbox" class="toggle_input" id="toggleSvar1"/>
+                        <label for="toggleSvar1" class="toggle_label" data-target="svar1"><img src="img/pil.webp" alt="Pil ned"></label>
+                    </div>
+                    <div class="svar" id="svar1">
+                        <p>Svar: Ja, alle vores øl indeholder mellem 0,0% og 0,5% alkohol og er derfor alkoholfri ifølge gældende lovgivning.</p>
+                    </div>
+                </div>
+                
+                <div class="green_box">
+                    <div class="q">
+                        <p>Er ZeroBuss Brew øl veganske?</p>
+                        <input type="checkbox" class="toggle_input" id="toggleSvar2"/>
+                        <label for="toggleSvar2" class="toggle_label" data-target="svar2"><img src="img/pil.webp" alt="Pil ned"></label>
+                    </div>
+                    <div class="svar" id="svar2">
+                        <p>Svar: Ja, alle vores øl er 100% veganske og fremstillet uden animalske produkter eller biprodukter.</p>
+                    </div>
+                </div>
+                
+                <div class="green_box">
+                    <div class="q">
+                        <p>Hvor kan jeg købe ZeroBuss Brew øl?</p>
+                        <input type="checkbox" class="toggle_input" id="toggleSvar3"/>
+                        <label for="toggleSvar3" class="toggle_label" data-target="svar3"><img src="img/pil.webp" alt="Pil ned"></label>
+                    </div>
+                    <div class="svar" id="svar3">
+                        <p>Svar: Vores øl kan købes i udvalgte supermarkeder, specialbutikker, barer og restauranter. Du kan også bestille dem online via vores hjemmeside. Læs mere under menupunktet ”Produkter”</p>
+                    </div>
+                </div>
+                
+                <div class="green_box">
+                    <div class="q">
+                        <p>Kan jeg bestille ZeroBuss Brew øl til private arrangementer?</p>
+                        <input type="checkbox" class="toggle_input" id="toggleSvar4"/>
+                        <label for="toggleSvar4" class="toggle_label" data-target="svar4"><img src="img/pil.webp" alt="Pil ned"></label>
+                    </div>
+                    <div class="svar" id="svar4">
+                        <p>Svar: Ja, vi tilbyder specialbestillinger til private arrangementer, bryllupper, fester og firmaevents. Læs mere her.</p>
+                    </div>
+                </div>
+                
+                <div class="green_box">
+                    <div class="q">
+                        <p>Hvilke varianter af alkoholfri øl tilbyder i?</p>
+                        <input type="checkbox" class="toggle_input" id="toggleSvar5"/>
+                        <label for="toggleSvar5" class="toggle_label" data-target="svar5"><img src="img/pil.webp" alt="Pil ned"></label>
+                    </div>
+                    <div class="svar" id="svar5">
+                        <p>Svar: Vi tilbyder et bredt udvalg af varianter, herunder IPA, lager, pilsner og sæsonbestemte specialøl, så der er noget for enhver smag. Se hele vores udvalg under ”Køb online”</p>
+                    </div>
+                </div>
+                
+                <div class="green_box">
+                    <div class="q">
+                        <p>Kan man køre bil efter at have drukket alkoholfri øl?</p>
+                        <input type="checkbox" class="toggle_input" id="toggleSvar6"/>
+                        <label for="toggleSvar6" class="toggle_label" data-target="svar6"><img src="img/pil.webp" alt="Pil ned"></label>
+                    </div>
+                    <div class="svar" id="svar6">
+                        <p>Svar: Ja, da alkoholfri øl indeholder meget lidt eller ingen alkohol, påvirker det ikke din evne til at køre bil. Det er en sikker mulighed, hvis du skal være bag rattet.</p>
+                    </div>
+                </div>
+                
+                <div class="green_box">
+                    <div class="q">
+                        <p>Kan man drikke alkoholfri øl under graviditet?</p>
+                        <input type="checkbox" class="toggle_input" id="toggleSvar7"/>
+                        <label for="toggleSvar7" class="toggle_label" data-target="svar7"><img src="img/pil.webp" alt="Pil ned"></label>
+                    </div>
+                    <div class="svar" id="svar7">
+                        <p>Svar: Selvom alkoholfri øl indeholder meget lidt eller ingen alkohol, er det altid bedst at konsultere en læge, før man drikker det under graviditet.</p>
+                    </div>
+                </div>
+                
+                <div class="green_box">
+                    <div class="q">
+                        <p>Hvordan sikrer i smagen i jeres alkoholfri øl?</p>
+                        <input type="checkbox" class="toggle_input" id="toggleSvar8"/>
+                        <label for="toggleSvar8" class="toggle_label" data-target="svar8"><img src="img/pil.webp" alt="Pil ned"></label>
+                    </div>
+                    <div class="svar" id="svar8">
+                        <p>Svar: Vi anvender avancerede bryggeteknikker og omhyggeligt udvalgte ingredienser for at bevare de komplekse smagsnoter og aromaer, som man forventer af kvalitetsøl.</p>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+        
+        <!--Her har jeg sat min footer ind med det relevante information og sat det op i lister så jeg kan style det i css-->
+        <footer>
+            <div class="alt_footer">
+            <div>
+            <ul>
+                <li><h4>Kontakt</h4></li>
+                <li>Telefon: 42373035</li>
+                <li>Adresse: Ryesgade 2, 8000</li>
+            </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h4>Telefontider</h4></li>
+                    <li>Man. - Fre. 08-16</li>
+                    <li>Lørdag 12-16</li>
+                    <li>Søndag Lukket</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h4>Følg os</h4></li>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>TikTok</li>
+                    <li>LinkedIn</li>
+                </ul>
+            </div>
+        </div>
+        </footer>
+    
+
+        <script src="js/script.js"></script>
+    </body>
